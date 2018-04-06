@@ -1,0 +1,89 @@
+/*============================================================
+   Blue Background Color
+   ============================================================*/
+
+   .c-heading:before, #newsletter,
+   .main-menu,
+   .btn-blue,
+   .btn-clrd,
+.dash-sidebar ul li a:hover,
+.dash-sidebar ul li a .fa,
+.posting-info
+   {
+     background-color: #5271ff;
+   }
+
+/*============================================================
+   Blue Background Color With Transparency
+   ============================================================*/
+
+   .slick.listing .caption-wrap
+   {
+     background-color: rgba(5,47,198, 0.8);
+   }
+
+/*============================================================
+   Blue Font and Icons Color
+   ============================================================*/
+   a, a:hover, .c-heading, .c-heading a, .drag-area .fa, .search-filter label .fa, .listrate .fa
+   {
+     color: #5271ff;
+   }
+
+/*============================================================
+   Blue Border Color
+   ============================================================*/
+   .form-control:focus, .form-control:active,
+.fake-radio.active
+   {
+     border-color: #052fc6;
+   }
+
+/*============================================================
+   Red Backkground Color
+   ============================================================*/
+   .btn-red,
+   .main-menu ul li:before,
+.main-menu .dropdown-menu li a:hover,
+.availability-check h2,
+.sepbox ul li .icon,
+.step-label
+   {
+     background-color: #ff5c5c !important;
+   }
+
+/*============================================================
+   Red Font and Icons Color
+   ============================================================*/
+   {
+     color: #d92228 !important;
+   }
+
+
+/*============================================================
+   Transition
+   ============================================================*/
+   a, .menubar, .slick.listing .caption-wrap, .slick.listing .caption-wrap .data,
+   .main-menu ul li:before
+   {
+    transition:all ease 0.5s;
+    -webkit-transition:all ease 0.5s;
+    -moz-transition:all ease 0.5s;
+    -o-transition:all ease 0.5s;
+    -ms-transition:all ease 0.5s;	
+  }
+
+  /*** Selection Color ****/
+
+  ::selection {
+    background: #d92228;
+    color:#ffffff;
+  }
+  ::-webkit-selection {
+    background: #d92228;
+    color: #ffffff;
+  }
+  ::-moz-selection {
+    background: #d92228;
+    color: #ffffff;
+  }

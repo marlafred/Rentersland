@@ -1,0 +1,73 @@
+.box-body nav ul.sidebar-menu>li a:hover {
+    color: #000;
+    background: #e2e4e6;
+    border: none;
+} 
+
+.box-body nav ul.sidebar-menu>li.active>a {
+    color: #000;
+    background: #e2e4e6;
+    border: none;
+}
+
+.ui-sortable { margin: 0px; padding: 0; }
+.ui-sortable li {list-style-type: none; padding: 6px 4px; cursor: move; }
+
+.new_amenties .btn-red, .new_amenties .btn-success{
+
+font-size: 20px;
+    border-radius: 4px;
+
+border:0;
+}
+.new_amenties{
+background:#fff;
+border-radius:6px;
+}
+.new_amenties > h4{
+padding: 0px 0 15px;
+font-weight:bold;
+}
+.new_amenties input[type="text"]{
+margin-bottom:10px;
+}
+
+
+
+
+
+
+
+.new_building_amenties .btn-red, .new_building_amenties .btn-success{
+
+font-size: 20px;
+    border-radius: 4px;
+   
+border:0;
+}
+.new_building_amenties{
+background:#fff;
+border-radius:6px;
+}
+.new_building_amenties > h4{
+padding: 0px 0 15px;
+font-weight:bold;
+}
+.new_building_amenties input[type="text"]{
+margin-bottom:10px;
+}
+
+.old_amentiy_div .btn-red{
+
+    font-size: 20px;
+    border-radius: 4px;
+    
+    border: 0;
+    position: absolute;
+    top: 1px;
+    right: 26px;
+}
+.old_amentiy_div .amen_wrapper{
+padding-bottom:10px;
+    margin-top: 15px;
+}

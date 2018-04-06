@@ -1,0 +1,66 @@
+[08-Mar-2018 11:06:56 UTC] PHP Fatal error:  Call to undefined method Illuminate\Routing\Redirector::rout() in /home/rentxknj/public_html/app/Http/Middleware/RedirectIfAuthenticated.php on line 23
+[11-Mar-2018 21:10:48 UTC] PHP Fatal error:  Call to undefined method Illuminate\Routing\Redirector::rout() in /home/rentxknj/public_html/app/Http/Middleware/RedirectIfAuthenticated.php on line 23
+[11-Mar-2018 21:10:55 UTC] PHP Fatal error:  Call to undefined method Illuminate\Routing\Redirector::rout() in /home/rentxknj/public_html/app/Http/Middleware/RedirectIfAuthenticated.php on line 23
+[11-Mar-2018 21:51:13 UTC] PHP Fatal error:  Call to undefined method Illuminate\Routing\Redirector::rout() in /home/rentxknj/public_html/app/Http/Middleware/RedirectIfAuthenticated.php on line 23
+[11-Mar-2018 21:51:20 UTC] PHP Fatal error:  Call to undefined method Illuminate\Routing\Redirector::rout() in /home/rentxknj/public_html/app/Http/Middleware/RedirectIfAuthenticated.php on line 23
+[11-Mar-2018 21:57:19 UTC] PHP Fatal error:  Call to undefined method Illuminate\Routing\Redirector::rout() in /home/rentxknj/public_html/app/Http/Middleware/RedirectIfAuthenticated.php on line 23
+[11-Mar-2018 21:57:34 UTC] PHP Fatal error:  Call to undefined method Illuminate\Routing\Redirector::rout() in /home/rentxknj/public_html/app/Http/Middleware/RedirectIfAuthenticated.php on line 23
+[11-Mar-2018 21:57:46 UTC] PHP Fatal error:  Call to undefined method Illuminate\Routing\Redirector::rout() in /home/rentxknj/public_html/app/Http/Middleware/RedirectIfAuthenticated.php on line 23
+[12-Mar-2018 14:32:44 UTC] PHP Fatal error:  Call to undefined method Illuminate\Routing\Redirector::rout() in /home/rentxknj/public_html/app/Http/Middleware/RedirectIfAuthenticated.php on line 23
+[12-Mar-2018 14:32:49 UTC] PHP Fatal error:  Call to undefined method Illuminate\Routing\Redirector::rout() in /home/rentxknj/public_html/app/Http/Middleware/RedirectIfAuthenticated.php on line 23
+[12-Mar-2018 14:36:23 UTC] PHP Fatal error:  Call to undefined method Illuminate\Routing\Redirector::rout() in /home/rentxknj/public_html/app/Http/Middleware/RedirectIfAuthenticated.php on line 23
+[12-Mar-2018 14:36:28 UTC] PHP Fatal error:  Call to undefined method Illuminate\Routing\Redirector::rout() in /home/rentxknj/public_html/app/Http/Middleware/RedirectIfAuthenticated.php on line 23
+[12-Mar-2018 14:57:40 UTC] PHP Fatal error:  Call to undefined method Illuminate\Routing\Redirector::rout() in /home/rentxknj/public_html/app/Http/Middleware/RedirectIfAuthenticated.php on line 23
+[12-Mar-2018 14:57:45 UTC] PHP Fatal error:  Call to undefined method Illuminate\Routing\Redirector::rout() in /home/rentxknj/public_html/app/Http/Middleware/RedirectIfAuthenticated.php on line 23
+[12-Mar-2018 15:48:01 UTC] PHP Fatal error:  Call to undefined method Illuminate\Routing\Redirector::rout() in /home/rentxknj/public_html/app/Http/Middleware/RedirectIfAuthenticated.php on line 23
+[12-Mar-2018 15:48:06 UTC] PHP Fatal error:  Call to undefined method Illuminate\Routing\Redirector::rout() in /home/rentxknj/public_html/app/Http/Middleware/RedirectIfAuthenticated.php on line 23
+[12-Mar-2018 21:09:48 UTC] PHP Fatal error:  Call to undefined method Illuminate\Routing\Redirector::rout() in /home/rentxknj/public_html/app/Http/Middleware/RedirectIfAuthenticated.php on line 23
+[12-Mar-2018 21:10:12 UTC] PHP Fatal error:  Call to undefined method Illuminate\Routing\Redirector::rout() in /home/rentxknj/public_html/app/Http/Middleware/RedirectIfAuthenticated.php on line 23
+[14-Mar-2018 13:44:48 UTC] PHP Fatal error:  Call to undefined method Illuminate\Routing\Redirector::rout() in /home/rentxknj/public_html/app/Http/Middleware/RedirectIfAuthenticated.php on line 23
+[15-Mar-2018 01:24:14 UTC] PHP Fatal error:  Call to undefined method Illuminate\Routing\Redirector::rout() in /home/rentxknj/public_html/app/Http/Middleware/RedirectIfAuthenticated.php on line 23
+[15-Mar-2018 05:05:25 UTC] PHP Fatal error:  Call to undefined method Illuminate\Routing\Redirector::rout() in /home/rentxknj/public_html/app/Http/Middleware/RedirectIfAuthenticated.php on line 23
+[15-Mar-2018 05:05:37 UTC] PHP Fatal error:  Call to undefined method Illuminate\Routing\Redirector::rout() in /home/rentxknj/public_html/app/Http/Middleware/RedirectIfAuthenticated.php on line 23
+[17-Mar-2018 17:11:23 UTC] PHP Fatal error:  Call to undefined method Illuminate\Routing\Redirector::rout() in /home/rentxknj/public_html/app/Http/Middleware/RedirectIfAuthenticated.php on line 23
+[17-Mar-2018 17:11:28 UTC] PHP Fatal error:  Call to undefined method Illuminate\Routing\Redirector::rout() in /home/rentxknj/public_html/app/Http/Middleware/RedirectIfAuthenticated.php on line 23
+[19-Mar-2018 18:37:12 UTC] PHP Fatal error:  Call to undefined method Illuminate\Routing\Redirector::rout() in /home/rentxknj/public_html/app/Http/Middleware/RedirectIfAuthenticated.php on line 23
+[19-Mar-2018 22:08:29 UTC] PHP Fatal error:  Call to undefined method Illuminate\Routing\Redirector::rout() in /home/rentxknj/public_html/app/Http/Middleware/RedirectIfAuthenticated.php on line 23
+[19-Mar-2018 22:08:36 UTC] PHP Fatal error:  Call to undefined method Illuminate\Routing\Redirector::rout() in /home/rentxknj/public_html/app/Http/Middleware/RedirectIfAuthenticated.php on line 23
+[19-Mar-2018 22:29:30 UTC] PHP Fatal error:  Call to undefined method Illuminate\Routing\Redirector::rout() in /home/rentxknj/public_html/app/Http/Middleware/RedirectIfAuthenticated.php on line 23
+[20-Mar-2018 02:27:07 America/New_York] PHP Warning:  require_once(/home/rentxknj/public_html/public/index.php1): failed to open stream: No such file or directory in /home/rentxknj/public_html/index.php on line 21
+[20-Mar-2018 02:27:07 America/New_York] PHP Fatal error:  require_once(): Failed opening required '/home/rentxknj/public_html/public/index.php1' (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/rentxknj/public_html/index.php on line 21
+[20-Mar-2018 17:23:14 UTC] PHP Fatal error:  Call to undefined function assets() in /home/rentxknj/public_html/storage/framework/views/d70b956e5d0512eaf4fb2a08a8d79c222ce21620.php on line 62
+[20-Mar-2018 17:23:23 UTC] PHP Fatal error:  Call to undefined function assets() in /home/rentxknj/public_html/storage/framework/views/d70b956e5d0512eaf4fb2a08a8d79c222ce21620.php on line 62
+[21-Mar-2018 18:03:45 UTC] PHP Fatal error:  Call to undefined method Illuminate\Routing\Redirector::rout() in /home/rentxknj/public_html/app/Http/Middleware/RedirectIfAuthenticated.php on line 23
+[21-Mar-2018 18:03:50 UTC] PHP Fatal error:  Call to undefined method Illuminate\Routing\Redirector::rout() in /home/rentxknj/public_html/app/Http/Middleware/RedirectIfAuthenticated.php on line 23
+[25-Mar-2018 15:27:30 UTC] PHP Parse error:  syntax error, unexpected 'endforeach' (T_ENDFOREACH) in /home/rentxknj/public_html/storage/framework/views/ba62c0ca37829f35a751280b6b1edbd4137598d5.php on line 116
+[25-Mar-2018 18:03:29 UTC] PHP Fatal error:  Call to undefined method Illuminate\Routing\Redirector::rout() in /home/rentxknj/public_html/app/Http/Middleware/RedirectIfAuthenticated.php on line 23
+[25-Mar-2018 18:03:34 UTC] PHP Fatal error:  Call to undefined method Illuminate\Routing\Redirector::rout() in /home/rentxknj/public_html/app/Http/Middleware/RedirectIfAuthenticated.php on line 23
+[25-Mar-2018 18:07:51 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/rentxknj/public_html/storage/framework/views/ba62c0ca37829f35a751280b6b1edbd4137598d5.php on line 19
+[25-Mar-2018 18:07:54 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/rentxknj/public_html/storage/framework/views/ba62c0ca37829f35a751280b6b1edbd4137598d5.php on line 19
+[25-Mar-2018 18:08:12 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/rentxknj/public_html/storage/framework/views/ba62c0ca37829f35a751280b6b1edbd4137598d5.php on line 19
+[25-Mar-2018 18:10:20 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/rentxknj/public_html/storage/framework/views/ba62c0ca37829f35a751280b6b1edbd4137598d5.php on line 19
+[28-Mar-2018 15:33:36 UTC] PHP Fatal error:  Call to undefined method Illuminate\Routing\Redirector::rout() in /home/rentxknj/public_html/app/Http/Middleware/RedirectIfAuthenticated.php on line 23
+[28-Mar-2018 15:33:41 UTC] PHP Fatal error:  Call to undefined method Illuminate\Routing\Redirector::rout() in /home/rentxknj/public_html/app/Http/Middleware/RedirectIfAuthenticated.php on line 23
+[29-Mar-2018 17:08:00 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 7360 bytes) in /home/rentxknj/public_html/app/Http/Controllers/DropzoneController.php on line 21
+[29-Mar-2018 17:16:20 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 29440 bytes) in /home/rentxknj/public_html/app/Http/Controllers/DropzoneController.php on line 21
+[29-Mar-2018 17:55:43 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 29440 bytes) in /home/rentxknj/public_html/app/Http/Controllers/ListingController.php on line 140
+[29-Mar-2018 18:14:22 UTC] PHP Fatal error:  Call to undefined method Illuminate\Routing\Redirector::rout() in /home/rentxknj/public_html/app/Http/Middleware/RedirectIfAuthenticated.php on line 23
+[29-Mar-2018 18:14:27 UTC] PHP Fatal error:  Call to undefined method Illuminate\Routing\Redirector::rout() in /home/rentxknj/public_html/app/Http/Middleware/RedirectIfAuthenticated.php on line 23
+[29-Mar-2018 19:01:54 UTC] PHP Fatal error:  Call to undefined method Illuminate\Routing\Redirector::rout() in /home/rentxknj/public_html/app/Http/Middleware/RedirectIfAuthenticated.php on line 23
+[29-Mar-2018 19:02:00 UTC] PHP Fatal error:  Call to undefined method Illuminate\Routing\Redirector::rout() in /home/rentxknj/public_html/app/Http/Middleware/RedirectIfAuthenticated.php on line 23
+[30-Mar-2018 01:44:23 UTC] PHP Fatal error:  Call to undefined method Illuminate\Routing\Redirector::rout() in /home/rentxknj/public_html/app/Http/Middleware/RedirectIfAuthenticated.php on line 23
+[30-Mar-2018 01:44:29 UTC] PHP Fatal error:  Call to undefined method Illuminate\Routing\Redirector::rout() in /home/rentxknj/public_html/app/Http/Middleware/RedirectIfAuthenticated.php on line 23
+[30-Mar-2018 13:14:26 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/rentxknj/public_html/app/Http/Controllers/HomeController.php on line 139
+[30-Mar-2018 13:17:45 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/rentxknj/public_html/app/Http/Controllers/HomeController.php on line 139
+[30-Mar-2018 13:54:41 UTC] PHP Fatal error:  Call to undefined method Illuminate\Routing\Redirector::rout() in /home/rentxknj/public_html/app/Http/Middleware/RedirectIfAuthenticated.php on line 23
+[30-Mar-2018 13:54:45 UTC] PHP Fatal error:  Call to undefined method Illuminate\Routing\Redirector::rout() in /home/rentxknj/public_html/app/Http/Middleware/RedirectIfAuthenticated.php on line 23
+[30-Mar-2018 18:28:53 UTC] PHP Fatal error:  Call to undefined method Illuminate\Routing\Redirector::rout() in /home/rentxknj/public_html/app/Http/Middleware/RedirectIfAuthenticated.php on line 23
+[30-Mar-2018 18:28:57 UTC] PHP Fatal error:  Call to undefined method Illuminate\Routing\Redirector::rout() in /home/rentxknj/public_html/app/Http/Middleware/RedirectIfAuthenticated.php on line 23
+[02-Apr-2018 19:58:04 UTC] PHP Fatal error:  Call to undefined method Illuminate\Routing\Redirector::rout() in /home/rentxknj/public_html/app/Http/Middleware/RedirectIfAuthenticated.php on line 23
+[02-Apr-2018 19:59:50 UTC] PHP Fatal error:  Call to undefined method Illuminate\Routing\Redirector::rout() in /home/rentxknj/public_html/app/Http/Middleware/RedirectIfAuthenticated.php on line 23
+[02-Apr-2018 19:59:54 UTC] PHP Fatal error:  Call to undefined method Illuminate\Routing\Redirector::rout() in /home/rentxknj/public_html/app/Http/Middleware/RedirectIfAuthenticated.php on line 23
+[02-Apr-2018 20:55:14 UTC] PHP Fatal error:  Class 'Form' not found in /home/rentxknj/public_html/storage/framework/views/45ccf359fa1d3f8d468b3bf1c19369966004ec9e.php on line 22
+[02-Apr-2018 20:55:16 UTC] PHP Fatal error:  Class 'Form' not found in /home/rentxknj/public_html/storage/framework/views/45ccf359fa1d3f8d468b3bf1c19369966004ec9e.php on line 22
+[02-Apr-2018 20:55:20 UTC] PHP Fatal error:  Class 'Form' not found in /home/rentxknj/public_html/storage/framework/views/45ccf359fa1d3f8d468b3bf1c19369966004ec9e.php on line 22
+[04-Apr-2018 04:07:30 UTC] PHP Fatal error:  Call to undefined method Illuminate\Routing\Redirector::rout() in /home/rentxknj/public_html/app/Http/Middleware/RedirectIfAuthenticated.php on line 23
+[04-Apr-2018 04:07:36 UTC] PHP Fatal error:  Call to undefined method Illuminate\Routing\Redirector::rout() in /home/rentxknj/public_html/app/Http/Middleware/RedirectIfAuthenticated.php on line 23
