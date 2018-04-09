@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>@yield('title') | RentersLand</title>
     <!-- Tell the browser to be responsive to screen width -->
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <meta content="width=device-width" name="viewport">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     
     
@@ -19,19 +19,22 @@
     <link rel="stylesheet" href="{{ asset('css/dlmenu.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('style.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/icons.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/responsive.css') }}">
+    <!-- <link rel="stylesheet" type="text/css" href="{{ asset('css/responsive.css') }}"> -->
    
     
 <!--</head>-->
 <body>
-@include('templates.menu')
+<div class="page-body">
+    @include('templates.menu')
 
-@yield('body')
+    @yield('body')
 
-@include('templates.newsletter')
-@include('templates.footer')
+    @include('templates.newsletter')
+    @include('templates.footer')
+
 
     <div class="bottom-bar">{{ $setting->copyright }}</div>
+</div>
     <!-- Scripts -->
     <script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/jquery-migrate-1.2.1.min.js') }}"></script>
