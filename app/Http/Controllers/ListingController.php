@@ -80,7 +80,7 @@ class ListingController extends MyController
         }
         
     }
-    
+    //3rd Email Function
     public function applyLinting()
     {
         extract($_POST);
@@ -193,6 +193,7 @@ class ListingController extends MyController
             $file = $_FILES['featured_image']['name'];
             $File_Ext = substr($file, strrpos($file,'.'));
             $file = 	time().rand(1,1000).$File_Ext;
+            
             
             $targetPath = "public/uploads/".$file;
             

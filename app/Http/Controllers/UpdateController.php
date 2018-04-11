@@ -52,6 +52,7 @@ class UpdateController extends Controller
         echo $response;
     }/*updateListingsStatus*/
     
+    // 2nd Email Function Point
     public function updateUserStatus(Request $request){
         $doc_status = ''; $status = '';
         

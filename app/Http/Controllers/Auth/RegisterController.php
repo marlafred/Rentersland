@@ -106,6 +106,8 @@ class RegisterController extends MyController
                 $message->from($register->from_email,$register->from_name);
                 $message->setContentType('text/html');
             });
+
+            //First Mail Function Point
         }
         
         return $user;
