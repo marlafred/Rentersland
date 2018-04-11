@@ -109,6 +109,21 @@ class RegisterController extends MyController
 
             //First Mail Function Point
         }
+
+        if ( $user->user_type == 'Tenant' ) {
+            $data = array(
+                'full_name' => $user->first_name.' '.$user->last_name,
+                'email' => $user->email,
+                'phone_number' => $user->phone_number,
+            );
+
+            Mail::send('emails.tenant_signup_notify', array('data' => $data), function($message) {
+                $subject = 'A Tenant Just Registered Account';
+                $message->to('Support@rentersland.com');
+                $message->subject($subject);
+                $message->from('notification@rentersland.com', 'Notification');
+            });
+        }
         
         return $user;
          
