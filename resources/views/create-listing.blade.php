@@ -299,7 +299,7 @@
     function submit_ad(){
         
         $('.ad_images').val($('#upload_images').html());	
-	$('.dz-remove').hide();
+	    $('.dz-remove').hide();
         if($('.ad_images').val()==''){
            if(!confirm("Listing images not found, should continue without images ??")){
                return false;

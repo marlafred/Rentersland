@@ -150,13 +150,20 @@
     Dropzone.autoDiscover = false;
     token = $('meta[name="csrf-token"]').attr('content');
         //$(".dropzone").css('background-image',"url('{{ asset('images/spritemap.png') }}')");
-        var myDropzone = new Dropzone("div#dropzoneFileUpload", {
-        autoProcessQueue: false,
+    
+    var myDropzone = new Dropzone("div#dropzoneFileUpload", {
         url: "{{ route('dropzone.uploads') }}",
-        params: {
-            _token: token
+        autoProcessQueue: false,
+        method: 'POST',
+        withCredentials: true,
+        paramName: 'file', // The name that will be used to transfer the file
+        maxFilesize: 2, // MB
+        addRemoveLinks: true,
+        acceptedFiles: 'image/*',
+        headers: {
+            'X-CSRF-TOKEN': document.head.querySelector('meta[name="csrf-token"]').content,
+            'X-Requested-With': 'XMLHttpRequest',
         }
-
     });
     
     Dropzone.options.myAwesomeDropzone = {
@@ -213,9 +220,10 @@
                 return false;
             }
                  
-	    var uploaded1 = 0;
+	        var uploaded1 = 0;
 
             var attachments1 =	$('#upload_images').html();
+
             var res = attachments1.split("#");
             uploaded1 = res.length-1;
 
@@ -228,29 +236,31 @@
             
             if(uploaded1 < 21){
                 if (myDropzone.getQueuedFiles().length > 0) { 
-                        $('.cd-popup-container').find('p').html('<i class="fa fa-spin fa-spinner fa-3x"></i>');
-                        $('.cd-popup-trigger').click();
-                        myDropzone.processQueue();  
-                }else {
-                   var attachments =	$('#upload_images').html();
-                        var attchment_len =	$.trim( attachments ).length;
-
-                        var uploaded = 0;
-
-                        if(attchment_len>0){
-                                var res = attachments.split("#");
-                                uploaded = res.length-1;
-                                div_length = $(".dz-preview").length;
-
-                                if(uploaded==div_length || uploaded>div_length){
-                                        submit_ad();		
-                                }
-                        }else{
-
-                                submit_ad();
-                        }
+                    $('.cd-popup-container').find('p').html('<i class="fa fa-spin fa-spinner fa-3x"></i>');
+                    $('.cd-popup-trigger').click();
+                    myDropzone.processQueue();  
                 }
-            }else{
+                else {
+                    var attachments =	$('#upload_images').html();
+                    var attchment_len =	$.trim( attachments ).length;
+
+                    var uploaded = 0;
+
+                    if(attchment_len>0){
+                        var res = attachments.split("#");
+                        uploaded = res.length-1;
+                        div_length = $(".dz-preview").length;
+
+                        if(uploaded==div_length || uploaded>div_length){
+                            submit_ad();		
+                        }
+                    }
+                    else{
+                        submit_ad();
+                    }
+                }
+            }
+            else {
                 alert("Maximum 5 files can be uploaded!");
                 return false;		
             }

@@ -203,7 +203,7 @@ class AdminController extends Controller
        return view('admin.create-listings', array('listing'=> $listing)); 
     }
     
-        public function submitListing(){
+    public function submitListing(){
         extract($_POST);
         
         $file_name = ''; $schedual_startdate = ''; $schedual_enddate = ''; $pets = '';
@@ -254,12 +254,12 @@ class AdminController extends Controller
 
                 }
             }
-
+            
             $file = $_FILES['featured_image']['name'];
             $File_Ext = substr($file, strrpos($file,'.'));
             $file = 	time().rand(1,1000).$File_Ext;
             
-            $targetPath = "public/uploads/".$file;
+            $targetPath = public_path()."uploads/".$file;
             
             if(imagejpeg($image, $targetPath)){
                 $file_name = $file; 
@@ -270,7 +270,7 @@ class AdminController extends Controller
             */
 
             /*Small Thumbs*/
-            $destination = "public/uploads/small_thumbs/".$file;
+            $destination = public_path()."uploads/small_thumbs/".$file;
             $filename = $targetPath;
             $mode = 3;
             $width = 150;
@@ -278,7 +278,8 @@ class AdminController extends Controller
             $this->resizeImage($filename, $destination, $mode, $width, $height);
             
             /*Large Thumbs*/
-            $destination = "public/uploads/large_thumbs/".$file;
+            $destination = public_path()."uploads/large_thumbs/".$file;
+            
             $filename = $targetPath;
             $mode = 3;
             $width = 370;

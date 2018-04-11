@@ -15,11 +15,13 @@ class DropzoneController extends Controller {
     }
  
     public function uploadFiles() {
+        
         extract($_POST);
        
         $sourcePath = $_FILES['file']['tmp_name'];       // Storing source path of the file in a variable
         $image = imagecreatefromstring(file_get_contents($sourcePath));
         $exif = exif_read_data($sourcePath);
+        
         if(!empty($exif['Orientation'])) {
             switch($exif['Orientation']) {
                 case 1: // nothing
@@ -60,7 +62,7 @@ class DropzoneController extends Controller {
         $File_Ext = substr($file, strrpos($file,'.'));
         $file = 	time().rand(1,1000).$File_Ext;
 
-        $targetPath = "public/uploads/".$file;
+        $targetPath = public_path()."/uploads/".$file;
         $upload_success = false;
         
         if(imagejpeg($image, $targetPath)){
@@ -69,7 +71,7 @@ class DropzoneController extends Controller {
         
         
         /*Small Thumbs*/
-        $destination = "public/uploads/small_thumbs/".$file;
+        $destination = public_path()."/uploads/small_thumbs/".$file;
         $filename = $targetPath;
         $mode = 3;
         $width = 150;
@@ -77,7 +79,7 @@ class DropzoneController extends Controller {
         $this->resizeImage($filename, $destination, $mode, $width, $height);
 
         /*Large (Home Page) Thumbs*/
-        $destination = "public/uploads/large_thumbs/".$file;
+        $destination = public_path()."/uploads/large_thumbs/".$file;
         $filename = $targetPath;
         $mode = 3;
         $width = 370;
@@ -85,7 +87,7 @@ class DropzoneController extends Controller {
         $this->resizeImage($filename, $destination, $mode, $width, $height);
 
         /** Slider Images **/
-        $destination = "public/uploads/slider/".$file;
+        $destination = public_path()."/uploads/slider/".$file;
         $filename = $targetPath;
         $mode = 3;
         $width = 550;
@@ -173,7 +175,7 @@ class DropzoneController extends Controller {
         $forbiddenChars = array('?', '*', ':', '|', ';', '<', '>');
 
         if(strlen(str_replace($forbiddenChars, '', $file)) < strlen($file))
-            throw new \ArgumentException("Forbidden characters!");
+            // throw new \ArgumentException("Forbidden characters!");
 
         $file = escapeshellarg($file);
 
