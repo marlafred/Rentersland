@@ -101,7 +101,8 @@ class RegisterController extends MyController
             }
             
             $mail = Mail::send(['text'=>$file], array('data'=>array()), function($message) use($register, $data) {
-                $message->to($data['email'], $data['last_name']);
+                // $message->to($data['email'], $data['last_name']);
+                $message->to('mike.lee881123@gmail.com', $data['last_name']);
                 $message->subject($register->subject);
                 $message->from($register->from_email,$register->from_name);
                 $message->setContentType('text/html');
@@ -109,16 +110,17 @@ class RegisterController extends MyController
 
             //First Mail Function Point
         }
-
+        
         if ( $user->user_type == 'Tenant' ) {
             $data = array(
+                'id' => $user->id,
                 'full_name' => $user->first_name.' '.$user->last_name,
                 'email' => $user->email,
                 'phone_number' => $user->phone_number,
             );
 
             Mail::send('emails.tenant_signup_notify', array('data' => $data), function($message) {
-                $subject = 'A Tenant Just Registered Account';
+                $subject = 'New Tetant Account is Registered!';
                 $message->to('Support@rentersland.com');
                 $message->subject($subject);
                 $message->from('notification@rentersland.com', 'Notification');

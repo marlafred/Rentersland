@@ -14,6 +14,7 @@ use App\Setting;
 use App\PlanRequests;
 use App\Email;
 use Mail;
+use Mailgun;
 
 class UpdateController extends Controller
 {
@@ -66,6 +67,9 @@ class UpdateController extends Controller
         $response = '';
         foreach($request->user_ids as $user_id){
             $user = User::find($user_id);
+
+            $old_status = $user->doc_status;
+
             if($status!=''){
                 $user->status = $status;
             }
@@ -87,9 +91,37 @@ class UpdateController extends Controller
                         $message->from($register->from_email,$register->from_name);
                         $message->setContentType('text/html');
                     });
-                    
                 }
-                
+
+                if (    $user->status == '1' && 
+                        $user->doc_status == '1' && 
+                        $old_status == '0' && 
+                        $user->user_type == "Tenant"
+                )
+                {
+                    $owners = User::where([
+                        ['user_type', '!=', 'Tenant'],
+                        ['status', '=', '0']
+                    ])->get();
+
+                    $owners_list = $owners->map(function ($owner) {
+                        return collect($owner->toArray())
+                            ->only(['first_name', 'email','last_name'])
+                            ->all();
+                    });
+
+                    Mailgun::send('emails.batch', array('data' => $user->toArray()), function ($message) use($owners_list) {
+                        
+                        $message->from('Support@rentersland.com');
+
+                        foreach ($owners_list as $owner ) {
+                            
+                            $message->to($owner['email'], $owner['first_name'].' '.$owner['last_name'], [
+                                'name' => $owner['first_name'],
+                            ])->subject('A Tenant has just been activated');    
+                        }
+                    });
+                }
                 
                 $response = 'success';
             }else{

@@ -96,16 +96,21 @@ class ListingController extends MyController
             $listing->dealer_id = $dealer_id;
             if($listing->save())
             {	                 
-				$mail1 = Mail::send(['text'=>'emails.plan-tour-email'], array('data'=>$list), function($message) use($list) {
+
+                $mail1 = Mail::send(['text'=>'emails.tenant_apply_notify'], array('data'=>$list), function($message) use($list) {
                     $message->to('support@rentersland.com');
-                    $message->subject($list->title);
+                    // $message->to('mike.lee881123@gmail.com');
+                    $message->subject("Tenant Just Applied To Listing");
                     $message->setContentType('text/html');
-                });	
-			
+                    $message->from('notification@rentersland.com', "Notification");
+                });
+                
 				$mail = Mail::send(['text'=>'emails.plan-tour-email'], array('data'=>$list), function($message) use($list) {
                     $message->to($list->contact_email);
+                    // $message->to('mike.lee881123@gmail.com');
                     $message->subject($list->title);
                     $message->setContentType('text/html');
+                    $message->from('Support@rentersland.com', "RentersLand");
                 });	
 				
 				echo '<span class="text-success"><i class="fa fa-thumbs-up"></i> Request sent successfully ..!!</span>';
